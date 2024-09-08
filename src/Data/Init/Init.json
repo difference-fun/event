@@ -1,0 +1,94 @@
+{
+  "Init" : [
+    {
+      "name": "restore-ssh",
+      "controller": "Event:Difference:Fun:Framework:Ssh:restore",
+      "priority": 1
+    },
+    {
+      "name": "install-cron",
+      "controller": "Event:Difference:Fun:Framework:Cron:install",
+      "priority": 2
+    },
+    {
+      "name": "restore-apache2",
+      "controller": "Event:Difference:Fun:Framework:Apache2:restore",
+      "priority": 3
+    },
+    {
+      "name": "backup-apache2",
+      "controller": "Event:Difference:Fun:Framework:Apache2:backup",
+      "priority": 4
+    },
+    {
+      "name": "configure-apache2",
+      "controller": "Event:Difference:Fun:Framework:Apache2:configure",
+      "priority": 5
+    },
+    {
+      "name": "configure-doctrine",
+      "controller": "Event:Difference:Fun:Framework:Doctrine:configure",
+      "priority": 6
+    },
+    {
+      "name": "restore-doctrine",
+      "controller": "Event:Difference:Fun:Framework:Doctrine:restore",
+      "priority": 7
+    },
+    {
+      "name": "restart-apache2",
+      "controller": "Event:Difference:Fun:Framework:Apache2:restart",
+      "priority": 8
+    },
+    {
+      "name": "backup-php",
+      "controller": "Event:Difference:Fun:Framework:Php:backup",
+      "priority": 9
+    },
+    {
+      "name": "restore-php",
+      "controller": "Event:Difference:Fun:Framework:Php:restore",
+      "priority": 10
+    },
+    {
+      "name": "restart-php",
+      "controller": "Event:Difference:Fun:Framework:Php:restart",
+      "priority": 11
+    },
+    {
+      "name": "restart-cron",
+      "controller": "Event:Difference:Fun:Framework:Cron:restart",
+      "priority": 12
+    },
+    {
+      "name": "start-cron",
+      "controller": "Event:Difference:Fun:Framework:Cron:start",
+      "priority": 13
+    },
+    {
+      "name": "configure-git",
+      "controller": "Event:Difference:Fun:Framework:Git:configure",
+      "priority": 14
+    },
+    {
+      "name": "restore-git",
+      "controller": "Event:Difference:Fun:Framework:Git:restore",
+      "priority": 15
+    },
+    {
+      "name": "restore-symlink",
+      "controller": "Event:Difference:Fun:Framework:Symlink:restore",
+      "priority": 16
+    },
+    {
+      "name": "doctrine-orm-generate-proxies",
+      "controller": "Event:Difference:Fun:Framework:Doctrine:orm.generate.proxies",
+      "priority": 17
+    },
+    {
+      "name": "restart-system",
+      "controller": "Event:Difference:Fun:System:Restart:execute",
+      "priority": 1000000
+    }
+  ]
+}

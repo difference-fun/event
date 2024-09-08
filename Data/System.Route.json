@@ -1,0 +1,18 @@
+{
+  "System": {
+    "Route": [
+      {
+        "name": "difference-fun-cli-event",
+        "path": "difference_fun\/event",
+        "controller": "Package:Difference:Fun:Event:Controller:Cli:run",
+        "priority": 1001,
+        "request": {
+          "language": "en"
+        },
+        "method": [
+          "CLI"
+        ]
+      }
+    ]
+  }
+}

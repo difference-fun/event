@@ -1,0 +1,117 @@
+{
+    "System": {
+        "Event": [
+            {
+                "action": "cli.init.run",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:Framework:Init:run"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "cli.log.archive",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:Framework:Log:archive"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "cli.system.restart",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:System:Restart:execute"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "cli.system.restart.notification",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:System:Restart:notification"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "cli.system.update",
+                "options": {
+                    "command": [
+                        "{{binary()}} init --restore-git",
+                        "{{binary()}} difference-fun\/priya update"
+                    ],
+                    "controller": [],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "cli.system.update.notification",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:System:Update:notification"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "parse.build.write",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:Framework:Parse:Build:write"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "parse.build.write.error",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:Framework:Parse:Build:exception"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "parse.compile.exception",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:Framework:Parse:Build:exception"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            },
+            {
+                "action": "difference.fun.node.data.create.error",
+                "options": {
+                    "command": [],
+                    "controller": [
+                        "Event:Difference:Fun:Node:Create:error"
+                    ],
+                    "priority": 10
+                },
+                "#class": "System.Event"
+            }
+        ]
+    }
+}
