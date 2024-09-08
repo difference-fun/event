@@ -2,7 +2,7 @@
     "name" : "difference_fun/event",
     "description" : "difference_fun/event see https://difference.fun for detailed usage",
     "type" : "library",
-    "keywords" : ["node", "r3m", "library", "framework", "event", "difference.fun"],
+    "keywords" : ["node", "difference", "fun", "library", "framework", "event", "difference.fun"],
     "homepage": "https://difference.fun",
     "require" : {
         "ext-posix": "*",
